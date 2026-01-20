@@ -1,26 +1,53 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    text-align: center;
+/* Reset */
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Main heading */
 h1 {
-    margin-bottom: 30px;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
 }
 
+/* Card container */
 .card {
-    background: white;
-    padding: 15px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
+/* Section titles */
+.card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Images */
 .card img {
     width: 100%;
-    border-radius: 8px;
+    height: auto;
+    max-height: 90vh;        /* fits mobile screen */
+    object-fit: contain;    /* no cropping */
+    border-radius: 10px;
 }
+
+/* Tablet & desktop */
+@media (min-width: 768px) {
+    body {
+        max-width: 700px;
+        margin: auto;
+    }
+}
+
